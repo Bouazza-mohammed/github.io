@@ -915,6 +915,7 @@ h2 {
 
 /* Pie de página social */
 /* Estilos básicos del footer */
+/* Estilos básicos del footer */
 .social-footer {
     background-color: #333;
     color: white;
@@ -927,21 +928,23 @@ h2 {
     font-family: Arial, sans-serif;
 }
 
-/* Estilos para las redes sociales */
-.social-footer figure {
+/* Estilos para los íconos de redes sociales */
+.social-media {
     display: flex;
     gap: 15px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap; /* Permite que los íconos se apilen si no caben */
 }
 
-.social-footer img {
-    width: 50px;
-    height: 50px;
-    transition: transform 0.3s;
+.social-media a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px; /* Tamaño base de los íconos */
+    transition: color 0.3s, transform 0.3s;
 }
 
-.social-footer img:hover {
-    transform: scale(1.1);
+.social-media a:hover {
+    color: var(--color-primario); /* Color al pasar el ratón */
+    transform: scale(1.1); /* Efecto de aumento */
 }
 
 /* Estilos para la dirección */
@@ -976,9 +979,13 @@ h2 {
         padding: 15px;
     }
 
-    .social-footer figure {
+    .social-media {
         justify-content: center; /* Centra los íconos */
-        gap: 10px;
+        gap: 12px;
+    }
+
+    .social-media a {
+        font-size: 25px; /* Reduce tamaño en tabletas */
     }
 
     .social-footer .direction {
@@ -992,17 +999,16 @@ h2 {
         padding: 10px;
     }
 
-    .social-footer figure {
-        gap: 8px; 
+    .social-media {
+        gap: 10px;
     }
 
-    .social-footer img {
-        width: 45px;  
-        height: 45px; 
+    .social-media a {
+        font-size: 20px; /* Reduce tamaño en móviles */
     }
 
     .social-footer .direction {
-        font-size: 0.85em; 
+        font-size: 0.85em; /* Reduce tamaño de texto */
     }
 
     .social-footer p {
