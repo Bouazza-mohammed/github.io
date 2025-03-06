@@ -13,13 +13,12 @@
     <meta name="revisit-after" content="7 days"> <!-- No tiene impacto en SEO moderno, se puede eliminar -->
     <meta name="language" content="es-ES"> <!-- Define el idioma de la página -->
     <meta name="theme-color" content="#243AFCFF"> <!-- Establece un color de tema en dispositivos móviles -->
-
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/Favicon.png" type="image/x-icon">
-
+    <!-- Enlace a la librería de Boxicons para cargar estilos de íconos -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <!-- Enlace a la hoja de estilos -->
     <link rel="stylesheet" href="css/style.css">
-
     <title>WebTech</title> <!-- Título de la página que aparece en la pestaña del navegador -->
 </head>
 <body>
@@ -91,20 +90,30 @@
 
     <!-- Pie de página con enlaces a redes sociales -->
     <footer class="social-footer">
-        <figure>
-            <a href="https://www.facebook.com" target="_blank">
-                <img src="../images/facebook.png" alt="Síguenos en Facebook">
+        <!-- Contenedor para los íconos de redes sociales -->
+        <div class="social-media">
+            <!-- Enlace a Facebook: abre en una nueva pestaña con accesibilidad -->
+            <a href="https://www.facebook.com" target="_blank" alt="Síguenos en Facebook">
+            <!-- Ícono de Facebook usando la librería Boxicons -->
+            <i class="bx bxl-facebook"></i>
             </a>
-            <a href="https://www.youtube.com" target="_blank">
-                <img src="../images/youtube.png" alt="Visita nuestro canal de YouTube">
+            <!-- Enlace a Instagram: abre en una nueva pestaña con accesibilidad -->
+            <a href="https://www.instagram.com" target="_blank" alt="Síguenos en Instagram">
+            <!-- Ícono de Instagram usando Boxicons -->
+            <i class="bx bxl-instagram"></i>
             </a>
-            <a href="https://twitter.com/" target="_blank">
-                <img src="../images/twitter.png" alt="Síguenos en Twitter">
+            <!-- Enlace a Twitter: abre en una nueva pestaña con accesibilidad -->
+            <a href="https://www.twitter.com" target="_blank" alt="Síguenos en Twitter">
+            <!-- Ícono de Twitter usando Boxicons -->
+            <i class="bx bxl-twitter"></i>
             </a>
-            <a href="https://www.instagram.com" target="_blank">
-                <img src="../images/instagram.png" alt="Síguenos en Instagram">
+            <!-- Enlace a YouTube: abre en una nueva pestaña con accesibilidad -->
+            <a href="https://www.youtube.com" target="_blank" alt="Visita nuestro canal de YouTube">
+            <!-- Ícono de YouTube usando Boxicons -->
+            <i class="bx bxl-youtube"></i>
             </a>
-        </figure>
+        </div>
+        
         <!-- Dieeccion-->
         <address class="direction">
           Calle Ugena, 45, 45210 Yuncos, CP 45210, Toledo<br>
